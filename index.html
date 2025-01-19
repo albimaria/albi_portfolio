@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. Albi Maria Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#home" class="logo">A. Albi Maria</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#internships">Internship</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates" id="certificates-tab">Certificates</a></li>
+        </ul>
+    </header>
+
+    <div class="hero" id="home">
+        <h1 class="hero-name">Hi, I'm A. Albi Maria</h1>
+        <p class="hero-title">Third-Year AI & ML Engineering Student</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+
+    <main>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Organized and dependable candidate successful at managing multiple priorities with a positive attitude. I am eager to work in IT-related fields, leveraging my proficiency in Python and experience in marketing. With a willingness to take on added responsibilities, I strive to meet team goals effectively.</p>
+        </section>
+
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <p><strong>B.Tech., Artificial Intelligence and Machine Learning</strong> (Expected July 2026)<br>
+               Manakula Vinayagar Institute of Technology, Puducherry, India</p>
+            <p><strong>High School:</strong> St. Joseph of Cluny Girls Higher Secondary School</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Artificial Intelligence (AI)</li>
+                <li>Machine Learning (ML)</li>
+                <li>Python Programming</li>
+                <li>Web Development</li>
+                <li>Basics of Neural Networks</li>
+            </ul>
+        </section>
+
+        <section id="internships" class="card">
+            <h2>Internship</h2>
+            <p>I have done an internship at Prodigy Infotech in web development, where I developed five websites. These websites are showcased on my LinkedIn and GitHub profiles.</p>
+            
+            <!-- Internship Image Slider Section -->
+            <div class="internship-slider">
+                <div class="slider-images">
+                    <img src="internship/certi.png" alt="Internship Certificate">
+                    <img src="internship/lor.png" alt="Letter of Recommendation">
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>BEACON CLASS</h3>
+                    <p><strong>Objective:</strong> Enhance communication between teachers and students, especially in mobile-restricted environments such as schools.</p>
+                    <p><strong>Description:</strong> The project enables staff to reach students quickly and easily in the classroom, improving overall communication efficiency.</p>
+                    <p><strong>Key Features:</strong> Mobile-restricted adaptability, user-friendly interface for classroom environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="card hidden">
+            <h2>Certificates</h2>
+            <div class="certificates-slider">
+                <div class="slider-images">
+                    <img src="certificates/campus_executive.png" alt="Campus Executive">
+                    <img src="certificates/nxt_wave.png" alt="Next Wave Certificate">
+                    <img src="certificates/R.png" alt="R Programming Certificate">
+                    <img src="certificates/c.png" alt="C Programming Certificate">
+                    <img src="certificates/ds.png" alt="Data Structures Certificate">
+                    <img src="certificates/java.png" alt="Java Certificate">
+                    <img src="certificates/python.png" alt="Python Certificate">
+                    <img src="certificates/SQL.png" alt="SQL Certificate">
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="card contact-section">
+            <h2>Get in Touch</h2>
+            <form action="mailto:albimaria113@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group submit-btn-container">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 A. Albi Maria</p>
+        <a href="#home" class="back-to-top">Back to Top</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
